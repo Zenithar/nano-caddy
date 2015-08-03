@@ -18,4 +18,4 @@ EXPOSE 	   2015
 VOLUME     [ "/caddy" ]
 WORKDIR    [ "/caddy" ]
 ENTRYPOINT [ "/bin/caddy" ]
-CMD        [ "" ]
+CMD        [ "-conf='/caddy/Caddyfile" ]
