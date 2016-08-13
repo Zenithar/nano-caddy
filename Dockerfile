@@ -9,7 +9,7 @@ RUN apk add --update musl \
     && mkdir /go \
     && cd /go \
     && go get -tags=$CADDY_TAG github.com/mholt/caddy \
-    && go install github.com/mholt/caddy
+    && go install github.com/mholt/caddy \
     && mv $GOPATH/bin/caddy /bin \
     && mkdir /caddy \
     && apk del --purge build-tools \
