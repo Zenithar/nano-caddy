@@ -5,7 +5,7 @@ ENV GOPATH /go
 ENV CADDY_TAG v0.9.0
 
 RUN apk add --update musl \
-    && apk add -t build-tools go mercurial git \
+    && apk add -t build-tools alpine-sdk go mercurial git \
     && mkdir /go \
     && cd /go \
     && go get -tags=$CADDY_TAG github.com/mholt/caddy \
