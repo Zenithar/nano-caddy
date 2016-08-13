@@ -2,7 +2,7 @@ FROM alpine:edge
 MAINTAINER Thibault NORMAND <me@zenithar.org>
 
 ENV GOPATH /go
-ENV CADDY_TAG v0.8.0
+ENV CADDY_TAG v0.9.0
 
 RUN apk add --update musl \
     && apk add -t build-tools go mercurial git \
@@ -18,4 +18,4 @@ EXPOSE 	   2015
 VOLUME     [ "/caddy" ]
 WORKDIR    [ "/caddy" ]
 ENTRYPOINT [ "/bin/caddy" ]
-CMD        [ "-conf='/caddy/Caddyfile" ]
+CMD        [ "-conf='/caddy/Caddyfile'" ]
