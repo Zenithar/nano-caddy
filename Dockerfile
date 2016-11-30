@@ -16,6 +16,6 @@ RUN apk add --update musl \
 
 EXPOSE     2015
 VOLUME     [ "/caddy" ]
-WORKDIR    [ "/caddy" ]
+WORKDIR    "/caddy"
 ENTRYPOINT [ "/bin/caddy" ]
 CMD        [ "-conf='/caddy/Caddyfile'" ]
