@@ -2,7 +2,7 @@ FROM alpine:edge
 MAINTAINER Thibault NORMAND <me@zenithar.org>
 
 ENV GOPATH /go
-ENV CADDY_TAG v0.9.5
+ENV CADDY_TAG v0.10.4
 
 RUN apk add --update musl \
     && apk add -t build-tools build-base go mercurial git \
